@@ -51,7 +51,7 @@ nav {
   background: #1f3a44;
 }
 nav {
-  padding: 10px 10%;   /* 20px → 10px */
+  padding: 10px 10%;  
 }
 .logo {
   font-size: 24px;
@@ -222,8 +222,7 @@ html {
         flex-direction: column;
         text-align: center;
     }
-
-    .about-img {
+   .about-img {
         justify-content: center;
     }
 }
@@ -399,7 +398,6 @@ html {
 .left-section {
   width: 60%;
 }
-
 .left-section h2 {
   color: white;
   margin-bottom: 20px;
