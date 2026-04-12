@@ -1,214 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayushi-Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href ="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+ <html lang="en">
+     <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Aayushi Portfolio</title> 
+         <link rel="stylesheet" href="style.css"> 
+           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> 
+           <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script> 
+            </head> 
+            <script src="script.js"></script>
+            <body> 
+    <nav>
+        <div class="logo">Get to know me</div>
+    <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    </nav>
 
-</head>
-<body>
-    <header>
-        <nav> 
-            <div class="left">Aayushi's Portfolio</div>
-            <link rel="stylesheet" href="style.css">
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+     <section class="hero" id="home"> 
+        <h1>Aayushi Mohan</h1> 
+        <p>•Learning •Executing •Growing</p> 
+        <div class="icons"> 
+            <i class="fab fa-github"></i> 
+            <i class="fab fa-linkedin"></i> 
+            <i class="fas fa-envelope"></i> 
+            <div class="hero-content"> 
+         
+            <span id="element"></span> 
+             <div class="buttons"> 
+            <a> <button class="btn">Download Resume</button> </a>
+             <a href="https://github.com/AayushiMohan" target="_blank"> 
+            <button class="btn">GitHub</button> 
+        </a> <a href="https://linkedin.com/in/aayushimohan" target="_blank"> 
+            <button class="btn">LinkedIn</button> 
+        </a> </div> </div> 
+    </section> 
+    <section class="about" id="about"> 
+        <h2>✨About Me</h2> 
+        <div class="about-container"> 
+         <div class="about-text"> 
+        <p> Hi, I’m Aayushi, a learner and aspiring web developer. I enjoy working on new projects and exploring how things function behind the scenes.</p> 
+        <p> I am constantly strengthening my foundations while expanding my knowledge to grow as a developer. </p> 
+        <p> Beyond tech, I find balance in the gym and express myself through music and singing because for me, growth is not just about skills, but about evolving every day. </p> 
+    </div> 
+     <div class="about-img"> <img src="stylepic.jpeg" alt="Aayushi"> </div> 
+    </div> </section>
+    <section class="education" id="education"> 
+    <h2>🎓 Education</h2> 
+    <div class="edu-container"> 
+    <div class="edu-card"> 
+    <h3>Bachelor of Technology</h3> 
+    <p class="institution">SRM institute of science and technology</p> 
+    <p class="year">Academic year: 2022 - 2026</p> 
+    <p class="details">Computer Science and Engineering with Specialization in AI&ML</p> 
+</div> 
+<div class="edu-card"> 
+<h3>Class 12 (Senior Secondary)</h3> 
+<p class="institution">New Patliputra Central School</p> 
+<p class="year">12th academic year: 2020 - 2021</p> 
+<p class="details">Stream: PCM</p> 
+</div> 
+<div class="edu-card"> 
+<h3>Class 10 (Secondary)</h3> 
+<p class="institution">Radiant International School</p> 
+<p class="year">10th academic year: 2018 - 2019</p> 
+</div> 
+</div> 
+</section> 
+</div> 
+<br> 
+<section class="secondSection"> 
+<section class="skillsSection" id="skills"> 
+<h1>💻Skills</h1> 
+<div class="skills-container"> 
+<div class="skill-card"> 
+<h3>Languages</h3> 
+<p>C, C++<br>Python<br>JavaScript</p> </div> 
+<div class="skill-card"> <h3>Web Technologies & Frameworks</h3> 
+<p>HTML, CSS, React<br>Node.js, Tailwind CSS</p> </div> 
+<div class="skill-card"> <h3>Database</h3> <p>MySQL<br>MongoDB</p> </div> 
+<div class="skill-card"> <h3>ML</h3> <p>Pandas, NumPy, Matplotlib(libraries) 
+<br> Jupyter, Scikit Learn, Neural Networks</p> 
+</div> 
+</div> 
+</section> <br> 
+<section class="projectsSection" id="projects">
+    <h1>📂 Projects</h1>
+  <div class="projects-container">
+        <div class="project-card">
+            <div class="project-content">
+                <h3>LifeTrack</h3>
+                <p>A safe space to share, reflect, and receive supportive guidance for mental well-being.</p>
             </div>
-        </nav>
-    </header> 
-    <main>
-
-        <section class="firstSection">
-            <div class="leftSection">
-                Hello! it's me! 
-                <span class="highlight">Aayushi Mohan</span>
-                <br>
-                and i'm a passionate
-                <span id="element"></span>
-                <div class="buttons">
-                    <a><button class="btn">Download Resume</button></a>
-                    <a href="https://github.com/AayushiMohan"><button class="btn">Visit GitHub</button></a>
-                    <a href="https://linkedin.com/in/aayushimohan"><button class="btn">Visit linkedIn</button></a>
-                
-                </div>
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Healthcare Data Management Portal</h3>
+                <p>Built using HTML, CSS, JS, and React to manage patient data efficiently.</p>
             </div>
-            <div class="rightSection">
-                <img src="stylepic.jpeg" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <h3>AI Intrusion Detection System</h3>
+                <p>ML model analyzing network traffic and detecting malicious activity.</p>
             </div>
-        </section>
-    <hr>    
-        <section class="education" id="education">
-  <h2>🎓 Education</h2>
-
-  <div class="edu-container">
-
-    <div class="edu-card">
-      <h3>Bachelor of Technology</h3>
-      <p class="institution">SRM institute of science and technology</p>
-      <p class="year">Academic year: 2022 - 2026</p>
-      <p class="details">Computer Science and Engineering with Specialization in AI&ML</p>
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Heart Disease Prediction</h3>
+                <p>ML model to predict heart disease using structured datasets.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Temperature Converter</h3>
+                <p>Web app to convert temperatures between Celsius, Fahrenheit, and Kelvin.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Business Insights Dashboard</h3>
+                <p>Data analytics dashboard for business performance insights.</p>
+            </div>
+        </div>
     </div>
-
-    <div class="edu-card">
-      <h3>Class 12 (Senior Secondary)</h3>
-      <p class="institution">New Patliputra Central School</p>
-      <p class="year">12th academic year: 2020 - 2021</p>
-      <p class="details">Stream: PCM</p>
-    </div>
-
-    <div class="edu-card">
-      <h3>Class 10 (Secondary)</h3>
-      <p class="institution">Radiant International School</p>
-      <p class="year">10th academic year: 2018 - 2019</p>
-    </div>
-  </div>
 </section>
-        <section class="secondSection">
-        <section class="skillsSection">
-            <h1>💻Skills</h1>
-
-        <div class="skills-container">
-
-         <div class="skill-card">
-            <h3>Programming</h3>
-            <p>• C++ 
-                <br>
-                • Python</p>
-        </div>
-        <div class="skill-card">
-            <h3>Web Technologies & Frameworks</h3>
-            <p>HTML, CSS, JavaScript, React, Tailwind CSS,Node.js, MongoDB</p>
-        </div>
-        <div class="skill-card">
-            <h3>Database & Libraries</h3>
-            <p>MySQL<br>Pandas, NumPy, Matplotlib</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Tools</h3>
-            <p>• Git & GitHub (version control) 
-                <br> 
-               • Jupyter Notebook & VS Code (development environment) </p>
-        </div>
-    </div>
-</section>
-<section class="projectsSection">
-    <h1>📂Projects</h1>
-    <br>
-    <div class="projects-container">
-
-        <div class="project-card">
-            <h3>Healthcare Data Management Portal</h3>
-            <p>Built using HTML,CSS,Js,and React to manage patient data efficiently.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>AI Intrusion detection system</h3>
-            <p>ML model which focuses on analyzing network traffic data and distinguishing between normal and malicious activities.</p>
-        </div>
-        <div class="project-card">
-            <h3>Heart disease prediction</h3>
-            <p>ML model to predict heart disease using structured datasets.</p>
-        </div>
-        
-        <div class="project-card">
-            <h3>Business Insights Dashboard</h3>
-            <p>Created using data analytics tools for analyzing business performance.
-                Focused on user-friendly design and visualization best practices for clarity and ease of understanding.</p>
-        </div>
-        <div class="project-card">
-            <h3>Temperature Converter: </h3>
-            <p> Simple web-based Temperature Converter application built using HTML, CSS, and JavaScript.</p>
-            With this application, you can easily convert temperatures between Celsius, Fahrenheit, and Kelvin.
-        </div>
-    </div>
-</section>
-    </main>
-    <div class="contact-container">
-
-  <div class="left-section">
-    <h2>🌐Contact Me</h2>
-
-    <div class="form">
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
-    </div>
-  </div>
-  <div class="right-section">
-    <button>💬Send Message</button>
-
-    <p>Email: aayushimohan118@gmail.com</p>
-    <p><a href="#">LinkedIn</a></p>
-  </div>
-
-</div>
-    <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Aayushi's Portfolio</h3>
-            </div>
-            <div class="footer-second">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-third">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-rights">
-            www.aayushisportfolio.com | All right reserved
-        </div>
-    </footer>
-    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-    <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer'],
-      typeSpeed: 50,
-    });
-  </script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-<script>
-(function(){
-  emailjs.init("YOUR_PUBLIC_KEY");
-})();
-
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-    .then(function() {
-      alert("Message sent successfully!");
-    }, function(error) {
-      alert("Failed to send message.");
-    });
-});
-</script>
-</body>
-</html>
+ </main> 
+ <div class="contact-container"> 
+<div class="left-section"id="contact">
+<h2>🌐Contact Me</h2>
+<div class="form"> 
+<input type="text" placeholder="Your Name"> 
+<input type="email" placeholder="Your Email"> 
+<textarea placeholder="Your Message"></textarea> 
+</div> 
+</div> 
+<div class="right-section"> 
+<button>💬Send Message</button> 
+<p>Email: aayushimohan118@gmail.com</p> 
+<p><a href="#">LinkedIn</a></p> 
+</div> 
+</div> 
+<footer> 
+<p>© 2026 Aayushi | Crafted with code & music 🎧</p> 
+</footer> 
+<script> 
+(function(){ emailjs.init("YOUR_PUBLIC_KEY"); })(); document.getElementById("contact-form").addEventListener("submit", function(e) { e.preventDefault(); emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this) .then(function() { alert("Message sent successfully!"); }, function(error) { alert("Failed to send message."); }); }); 
+</script> 
+</body> 
+</html> 
