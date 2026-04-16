@@ -82,7 +82,7 @@
 <h3>Languages</h3> 
 <p>C, C++<br>Python<br>JavaScript</p> </div> 
 <div class="skill-card"> <h3>Web Technologies & Frameworks</h3> 
-<p>HTML, CSS, React<br>Node.js, Tailwind CSS</p> </div> 
+<p>React<br>Node.js, Tailwind CSS</p> </div> 
 <div class="skill-card"> <h3>Database</h3> <p>MySQL<br>MongoDB</p> </div> 
 <div class="skill-card"> <h3>ML</h3> <p>Pandas, NumPy, Matplotlib(libraries) 
 <br> Jupyter, Scikit Learn, Neural Networks</p> 
@@ -150,7 +150,8 @@
 <p>© 2026 Aayushi | Crafted with code & music 🎧</p> 
 </footer> 
 <script> 
-(function(){ emailjs.init("YOUR_PUBLIC_KEY"); })(); document.getElementById("contact-form").addEventListener("submit", function(e) { e.preventDefault(); emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this) .then(function() { alert("Message sent successfully!"); }, function(error) { alert("Failed to send message."); }); }); 
+(function(){ 
+ emailjs.init("YOUR_PUBLIC_KEY"); })(); document.getElementById("contact-form").addEventListener("submit", function(e) { e.preventDefault(); emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this) .then(function() { alert("Message sent successfully!"); }, function(error) { alert("Failed to send message."); }); }); 
 </script> 
 </body> 
 </html> 
