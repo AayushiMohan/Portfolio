@@ -27,7 +27,6 @@
     overflow-x: hidden;
   }
  
-  /* ── CANVAS BG ── */
   #bg-canvas {
     position: fixed;
     inset: 0;
@@ -36,7 +35,6 @@
     opacity: 0.35;
   }
  
-  /* ── NOISE TEXTURE ── */
   body::before {
     content: '';
     position: fixed;
@@ -47,10 +45,8 @@
     opacity: 0.4;
   }
  
-  /* wrap everything above canvas */
   .wrapper { position: relative; z-index: 2; }
  
-  /* ── NAV ── */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -96,7 +92,6 @@
   .nav-links a:hover { color: var(--cyan); }
   .nav-links a:hover::after { width: 100%; }
  
-  /* ── HERO ── */
   #hero {
     min-height: 100vh;
     display: flex;
@@ -357,7 +352,6 @@
   }
   .about-img-wrap:hover img { filter: grayscale(0%) contrast(1.05); }
  
-  /* ── EDUCATION ── */
   #education { background: var(--surface); }
   .edu-timeline { position: relative; padding-left: 0; }
   .edu-timeline::before {
@@ -415,7 +409,6 @@
     font-family: var(--mono);
   }
  
-  /* ── SKILLS ── */
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -471,7 +464,6 @@
     color: var(--cyan);
   }
  
-  /* ── PROJECTS ── */
   #projects { background: var(--surface); }
   .projects-grid {
     display: grid;
@@ -537,7 +529,6 @@
   .project-link:hover { gap: 12px; }
   .project-link i { font-size: 14px; }
  
-  /* ── CONTACT ── */
   .contact-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -600,7 +591,6 @@
   }
   .contact-right textarea { height: 110px; }
  
-  /* ── FOOTER ── */
   footer {
     padding: 32px 6%;
     border-top: 1px solid var(--border);
@@ -622,7 +612,6 @@
   }
   footer .foot-links a:hover { color: var(--cyan); }
  
-  /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -640,7 +629,6 @@
     50% { opacity: 0; }
   }
  
-  /* ── CURSOR BLINK ── */
   .cursor {
     display: inline-block;
     width: 3px;
@@ -651,7 +639,6 @@
     margin-left: 2px;
   }
  
-  /* ── REVEAL ON SCROLL ── */
   .reveal {
     opacity: 0;
     transform: translateY(32px);
@@ -662,7 +649,6 @@
     transform: translateY(0);
   }
  
-  /* ── MOBILE ── */
   @media (max-width: 900px) {
     .about-grid { grid-template-columns: 1fr; }
     .about-img-wrap { max-width: 340px; margin: 0 auto; }
@@ -678,7 +664,6 @@
     section { padding: 70px 4%; }
   }
  
-  /* ── HAMBURGER (mobile) ── */
   .hamburger {
     display: none;
     flex-direction: column;
