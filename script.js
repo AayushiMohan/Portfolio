@@ -9,7 +9,6 @@ function resize() {
 resize();
 window.addEventListener('resize', resize);
  
-/* grid lines */
 function buildGrid() {
   gridLines = [];
   const spacing = 80;
@@ -19,7 +18,6 @@ function buildGrid() {
 buildGrid();
 window.addEventListener('resize', buildGrid);
  
-/* particles */
 for(let i = 0; i < 60; i++) {
   particles.push({
     x: Math.random() * window.innerWidth,
@@ -34,7 +32,6 @@ for(let i = 0; i < 60; i++) {
 function draw() {
   ctx.clearRect(0, 0, W, H);
  
-  /* grid */
   ctx.strokeStyle = 'rgba(0,200,255,0.04)';
   ctx.lineWidth = 1;
   gridLines.forEach(l => {
@@ -44,7 +41,6 @@ function draw() {
     ctx.stroke();
   });
  
-  /* particles */
   particles.forEach(p => {
     p.x += p.vx; p.y += p.vy;
     if(p.x < 0) p.x = W; if(p.x > W) p.x = 0;
@@ -54,8 +50,7 @@ function draw() {
     ctx.fillStyle = `rgba(0,200,255,${p.alpha})`;
     ctx.fill();
   });
- 
-  /* connections */
+
   for(let i = 0; i < particles.length; i++) {
     for(let j = i + 1; j < particles.length; j++) {
       const dx = particles[i].x - particles[j].x;
@@ -74,19 +69,16 @@ function draw() {
   requestAnimationFrame(draw);
 }
 draw();
- 
-/* ── NAVBAR SCROLL ── */
+
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 60);
 });
- 
-/* ── HAMBURGER ── */
+
 document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('navLinks').classList.toggle('open');
 });
- 
-/* ── SCROLL REVEAL ── */
+
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
