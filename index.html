@@ -1,318 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aayushi Mohan — Portfolio</title>
-<meta name="description" content="Aayushi Mohan — Full-Stack Developer & AI/ML Engineer. B.Tech CSE (AI&ML), SRM IST.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aayushi Mohan- Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
+<!-- Animated BG -->
 <canvas id="bg-canvas"></canvas>
- 
-<nav class="sidebar" aria-label="Section navigation">
-  <div class="sidebar__path">~/aayushi_mohan</div>
-  <ul class="filetree" id="filetree">
-    <li><a href="#top"><span class="dot"></span><span class="label">intro</span></a></li>
-    <li><a href="#about"><span class="dot"></span><span class="label">about.md</span></a></li>
-    <li><a href="#education"><span class="dot"></span><span class="label">education.log</span></a></li>
-    <li><a href="#skills"><span class="dot"></span><span class="label">skills.json</span></a></li>
-    <li><a href="#experience"><span class="dot"></span><span class="label">experience.log</span></a></li>
-    <li><a href="#projects"><span class="dot"></span><span class="label">projects/</span></a></li>
-    <li><a href="#achievements"><span class="dot"></span><span class="label">achievements.md</span></a></li>
-    <li><a href="#contact"><span class="dot"></span><span class="label">contact.sh</span></a></li>
+
+<div class="wrapper">
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo"><span>~/</span>aayushi_mohan</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">about</a></li>
+    <li><a href="#education">education</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#contact">contact</a></li>
   </ul>
-  <div class="sidebar__socials">
-    <a href="https://github.com/AayushiMohan" aria-label="GitHub" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
-    </a>
-    <a href="https://linkedin.com/in/aayushimohan" aria-label="LinkedIn" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5c0-1.4 1-2.5 2.3-2.5S15.5 11 15.5 12.5V17M11 10v7"/></svg>
-    </a>
-    <a href="mailto:aayushimohan118@gmail.com" aria-label="Email">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
-    </a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
   </div>
 </nav>
- 
-<main>
- 
-  <section class="hero" id="top">
-    <div class="hero__eyebrow">B.Tech CSE · AI &amp; ML Specialization — SRM IST, 2022–2026</div>
-    <h1>Aayushi<span class="line2">Mohan</span></h1>
-    <div class="hero__role">_ Full-Stack Developer / AI &amp; ML Engineer<span class="cursor"></span></div>
-    <p class="lede">A developer passionate about building Web Applications and Machine Learning projects that solve real-world problems.</p>
-    <div class="hero__mantra">Learning | Executing | Growing</div>
-    <div class="hero__cta">
-      <a class="btn btn--solid" href="https://github.com/AayushiMohan" target="_blank" rel="noopener">View GitHub</a>
-      <a class="btn btn--ghost" href="mailto:aayushimohan118@gmail.com">Get in Touch</a>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Computer Science &amp; AI/ML · SRM IST 2022-2026</div>
+    <h1 class="hero-name">
+      Aayushi<br>
+      <span class="line2">Mohan</span>
+    </h1>
+    <div class="hero-sub" id="typed-sub">_ Full-stack || AI&ML<span class="cursor"></span></div>
+    <p class="hero-desc">
+      A developer passionate about building Web Applications and Machine Learning projects that solve real-world problems. <br><strong>Learning | Executing | Growing</strong>
+    </p>
+    <div class="hero-actions">
+      <a href="https://github.com/AayushiMohan" target="_blank" class="btn-primary">View GitHub</a>
+      <a href="mailto:aayushimohan118@gmail.com" class="btn-outline">Get in Touch</a>
     </div>
-    <div class="hero__socials">
-      <a href="https://github.com/AayushiMohan" aria-label="GitHub" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+    <div class="hero-socials">
+      <a href="https://github.com/AayushiMohan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/aayushimohan" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:aayushimohan118@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-tag reveal">01 / about</div>
+  <h2 class="section-title reveal">Who I <em>am</em></h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>Hi, I'm <strong>Aayushi</strong>, student at SRM IST pursuing B.tech in Computer Science and Engineering with specialization in AI&ML. i am passionate about building full-stack and ML-powered projects that have real-world impact.</p>
+      <p>I'm constantly strengthening my foundations in DSA while exploring the evolving AI landscape.</p>
+      <p>Beyond code, I find balance at the gym and through music and singing.</p>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Projects shipped</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Tech skills</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">2026</span>
+          <span class="stat-label">Graduating</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">CSE(AI&ML)</span>
+          <span class="stat-label">Degree</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-img-wrap reveal">
+      <img src="stylepic.jpeg" alt="Aayushi Mohan">
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-tag reveal">02 / education</div>
+  <h2 class="section-title reveal">Academic <em>journey</em></h2>
+  <div class="edu-timeline">
+    <div class="edu-item reveal">
+      <div class="edu-year">2022 — 2026</div>
+      <div class="edu-degree">Bachelor of Technology</div>
+      <div class="edu-school">SRM Institute of Science and Technology</div>
+      <div class="edu-detail">CSE · Specialization in AI &amp; Machine Learning</div>
+    </div>
+    <div class="edu-item reveal">
+      <div class="edu-year">2020 — 2021</div>
+      <div class="edu-degree">Class XII · Senior Secondary</div>
+      <div class="edu-school">New Patliputra Central School</div>
+      <div class="edu-detail">Stream: PCM</div>
+    </div>
+    <div class="edu-item reveal">
+      <div class="edu-year">2018 — 2019</div>
+      <div class="edu-degree">Class X · Secondary</div>
+      <div class="edu-school">Radiant International School</div>
+      <div class="edu-detail">All subjects</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag reveal">03 / skills</div>
+  <h2 class="section-title reveal">Technical <em>stack</em></h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-cat">Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-cat">Web · Frameworks</div>
+      <div class="skill-tags">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">REST APIs</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-cat">Databases</div>
+      <div class="skill-tags">
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">MongoDB</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-cat">Machine Learning</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Scikit-Learn</span>
+        <span class="skill-tag">Neural Networks</span>
+        <span class="skill-tag">Jupyter</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-cat">Developer Tools</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Vercel</span>
+        <span class="skill-tag">Streamlit</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-cat">AI Tools</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Claude</span>
+        <span class="skill-tag">Cursor</span>
+        <span class="skill-tag">Perplexity</span>
+        <span class="skill-tag">Notion AI</span>
+        <span class="skill-tag">Grok</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+  <div class="skill-cat">Core Concepts</div>
+  <div class="skill-tags">
+    <span class="skill-tag">Data Structures and Algorithms</span>
+    <span class="skill-tag">Object-Oriented Programming</span>
+  </div>
+</div>
+
+<div class="skill-card reveal">
+  <div class="skill-cat">Realtime Tech</div>
+  <div class="skill-tags">
+    <span class="skill-tag">Socket.io</span>
+    <span class="skill-tag">WebRTC</span>
+    <span class="skill-tag">LiveKit</span>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-tag reveal">04 / projects</div>
+  <h2 class="section-title reveal">Things I've <em>built</em></h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-num">01</div>
+      <div class="project-title">Shiva — AI Chatbot</div>
+      <div class="project-desc">Full-stack AI chatbot powered by Groq's LLaMA 3.3 70B model with multi-turn conversation memory. Ask anything — code, career advice, concepts, or casual chat.</div>
+      <a href="https://github.com/AayushiMohan/LLM-Powered-AI_Chatbot" target="_blank" class="project-link">
+        View on GitHub <i class="fab fa-github"></i>
       </a>
-      <a href="https://linkedin.com/in/aayushimohan" aria-label="LinkedIn" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5c0-1.4 1-2.5 2.3-2.5S15.5 11 15.5 12.5V17M11 10v7"/></svg>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">02</div>
+      <div class="project-title">AI Intrusion Detection System</div>
+      <div class="project-desc">ML-based IDS that analyzes sequential network traffic data to detect and classify anomalous activity. Built using LSTM neural networks for real-time threat identification.</div>
+      <a href="https://github.com/AayushiMohan/AI-Intrusion-Detecting-System" target="_blank" class="project-link">
+        View on GitHub <i class="fab fa-github"></i>
       </a>
-      <a href="mailto:aayushimohan118@gmail.com" aria-label="Email">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">03</div>
+      <div class="project-title">HandConnect — Neon Aura AR</div>
+      <div class="project-desc">Browser-based AR experience using real-time hand tracking to generate interactive neon visuals and audio effects. Runs directly in the browser via webcam — no installs required.</div>
+      <a href="https://github.com/AayushiMohan/HandConnect" target="_blank" class="project-link">
+        View on GitHub <i class="fab fa-github"></i>
       </a>
     </div>
-  </section>
- 
-  <section class="section" id="about">
-    <div class="filebar">about.md</div>
-    <h2 class="reveal">Who I <em>am</em></h2>
-    <div class="about__grid">
-      <div class="reveal">
-        <p>Hi, I'm <strong>Aayushi</strong>, student at SRM IST pursuing B.tech in Computer Science and Engineering with specialization in AI&amp;ML. i am passionate about building full-stack and ML-powered projects that have real-world impact.</p>
-        <p>I'm constantly strengthening my foundations in DSA while exploring the evolving AI landscape.</p>
-        <p>Beyond code, I find balance at the gym and through music and singing.</p>
-      </div>
-      <div class="about__photo-wrap reveal">
-        <img class="about__photo" src="https://am-portfolio-lilac.vercel.app/stylepic.jpeg" alt="Aayushi Mohan" loading="lazy">
-      </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">04</div>
+      <div class="project-title">VideoConnect</div>
+      <div class="project-desc">Scalable video platform supporting 45+ concurrent users. Room creation with shareable links, audio/video toggle, screen sharing, and real-time chat sidebar powered by Socket.io.</div>
+      <a href="https://github.com/AayushiMohan/VideoConnect" target="_blank" class="project-link">
+        View on GitHub <i class="fab fa-github"></i>
+      </a>
     </div>
-  </section>
- 
-  <section class="section" id="education">
-    <div class="filebar">education.log</div>
-    <h2 class="reveal">Academic <em>journey</em></h2>
-    <div class="timeline">
-      <div class="timeline__item reveal">
-        <div class="timeline__date">2022 — 2026</div>
-        <div>
-          <div class="timeline__title">Bachelor of Technology — Computer Science &amp; Engineering</div>
-          <div class="timeline__sub">SRM Institute of Science and Technology, Delhi NCR · AI &amp; ML Specialization · CGPA 8.1/10</div>
-        </div>
-      </div>
-      <div class="timeline__item reveal">
-        <div class="timeline__date">2020 — 2021</div>
-        <div>
-          <div class="timeline__title">Class XII · Senior Secondary</div>
-          <div class="timeline__sub">New Patliputra Central School · Stream: PCM</div>
-        </div>
-      </div>
-      <div class="timeline__item reveal">
-        <div class="timeline__date">2018 — 2019</div>
-        <div>
-          <div class="timeline__title">Class X · Secondary</div>
-          <div class="timeline__sub">Radiant International School</div>
-        </div>
-      </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">05</div>
+      <div class="project-title">LifeTrack</div>
+      <div class="project-desc">A safe space to share, reflect, and receive supportive guidance for mental well-being — combining thoughtful UX with backend intelligence.</div>
+      <a href="https://github.com/AayushiMohan/LifeTrack-For-Mental-Wellbeing" target="_blank" class="project-link">
+        View on GitHub <i class="fab fa-github"></i>
+      </a>
     </div>
-  </section>
- 
-  <section class="section" id="skills">
-    <div class="filebar">skills.json</div>
-    <h2 class="reveal">Technical <em>stack</em></h2>
-    <div class="skills__wrap">
-      <div class="skillgrp reveal">
-        <div class="skillgrp__label">Languages</div>
-        <div class="tags"><span class="tag">C++</span><span class="tag">Python</span><span class="tag">JavaScript</span></div>
-      </div>
-      <div class="skillgrp reveal">
-        <div class="skillgrp__label">Web &amp; Frameworks</div>
-        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS3</span><span class="tag">Tailwind CSS</span><span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST APIs</span></div>
-      </div>
-      <div class="skillgrp reveal">
-        <div class="skillgrp__label">Databases</div>
-        <div class="tags"><span class="tag">MongoDB</span></div>
-      </div>
-      <div class="skillgrp reveal">
-        <div class="skillgrp__label">Machine Learning</div>
-        <div class="tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">TensorFlow / Keras</span><span class="tag">Neural Networks</span></div>
-      </div>
-      <div class="skillgrp reveal">
-        <div class="skillgrp__label">Realtime &amp; Systems</div>
-        <div class="tags"><span class="tag">Socket.io</span><span class="tag">WebRTC</span><span class="tag">LiveKit</span></div>
-      </div>
-      <div class="skillgrp reveal">
-        <div class="skillgrp__label">Tools &amp; Deployment</div>
-        <div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Vercel</span><span class="tag">Render</span></div>
-      </div>
-      <div class="skillgrp reveal">
-        <div class="skillgrp__label">Core CS</div>
-        <div class="tags"><span class="tag">Object-Oriented Programming</span><span class="tag">Data Structures &amp; Algorithms</span></div>
-      </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">06</div>
+      <div class="project-title">Currency Converter</div>
+      <div class="project-desc">Real-time currency converter using live exchange rate APIs. Clean UI, fast updates, and support for multiple currencies with accurate rate display.</div>
+      <a href="https://github.com/AayushiMohan/Currency-Converter" target="_blank" class="project-link">
+        View on GitHub <i class="fab fa-github"></i>
+      </a>
     </div>
-    <div class="skills__note reveal">// AI-assisted workflow: Claude · Cursor · Perplexity</div>
-  </section>
- 
-  <section class="section" id="experience">
-    <div class="filebar">experience.log</div>
-    <h2 class="reveal">Where I've <em>worked</em></h2>
- 
-    <div class="xp reveal">
-      <div class="xp__head">
-        <div class="xp__role">Open-Source Developer — GirlScript Summer of Code (GSSoC 2026)</div>
-        <div class="xp__meta">May 2026 – Present</div>
-      </div>
-      <div class="xp__org">Remote</div>
-      <ul>
-        <li>Contributed to 100 Days 100 Web Projects — built and merged a Temperature Converter web app (HTML, CSS, JavaScript); received a "quality: exceptional" label from the maintainer.</li>
-        <li>Contributed to DevTrack — added an "Open in GitHub" button to the PersonalRecords component (TypeScript, React), improving accessibility with aria-label support.</li>
-        <li>Collaborated with maintainers and contributors across two open-source projects, incorporating code review feedback to meet repository quality standards.</li>
-      </ul>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-tag reveal">05 / contact</div>
+  <h2 class="section-title reveal">Let's <em>connect</em></h2>
+  <div class="contact-wrap reveal">
+    <div class="contact-left">
+      <p>I'm a CS student actively seeking <strong style="color:var(--text)">SDE / Full-Stack internship and full-time roles</strong>.</p>
+      <p>If you're building something meaningful, I'd love to be a part of it.</p>
+      <p>Open to opportunities & collaborations.</p>
+      <a href="mailto:aayushimohan118@gmail.com" class="contact-email">aayushimohan118@gmail.com</a>
     </div>
- 
-    <div class="xp reveal">
-      <div class="xp__head">
-        <div class="xp__role">Undergraduate Research — Machine Learning &amp; Network Security</div>
-        <div class="xp__meta">Jan 2026 – Apr 2026</div>
+    <div class="contact-right">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Your name">
       </div>
-      <div class="xp__org">SRM Institute of Science and Technology, Delhi NCR</div>
-      <ul>
-        <li>Selected and implemented an LSTM-based architecture for sequential network traffic analysis, outperforming statistical baselines in precision and recall across binary and multi-class classification tasks.</li>
-        <li>Processed and feature-engineered sequential network traffic datasets, coordinating methodology and experimental design across a 3-member research team.</li>
-        <li>Applied binary and multi-class deep learning classification, evaluating models with F1-score, precision, and recall metrics.</li>
-        <li>Co-authored a research paper accepted in IJARESM (ISSN: 2455-6211, Impact Factor: 9.175), Vol. 14, Issue 4, April 2026.</li>
-      </ul>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="field">
+        <label>Message</label>
+        <textarea placeholder="What's on your mind?"></textarea>
+      </div>
+      <button class="btn-primary" style="clip-path:none; width:100%; margin-top:4px;" onclick="alert('Message sent! I\'ll get back to you soon.')">Send Message</button>
     </div>
-  </section>
- 
-  <section class="section" id="projects">
-    <div class="filebar">projects/</div>
-    <h2 class="reveal">Things I've <em>built</em></h2>
-    <div class="projects">
- 
-      <div class="project reveal">
-        <div class="project__index">01</div>
-        <div>
-          <div class="project__title">VideoConnect — Real-Time Video Conferencing Platform</div>
-          <p class="project__desc">Distributed real-time communication platform built with React, Node.js, WebRTC, LiveKit, and Socket.io, using SFU-based media routing for scalability across 40+ concurrent users. Backend services and REST APIs handle room management, participant routing, and real-time messaging.</p>
-          <div class="project__links">
-            <a href="https://github.com/AayushiMohan/VideoConnect" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://video-connect-beryl.vercel.app/" target="_blank" rel="noopener">Live ↗</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project reveal">
-        <div class="project__index">02</div>
-        <div>
-          <div class="project__title">LifeTrack — Mental Wellness Platform</div>
-          <p class="project__desc">Cloud-hosted full-stack application (Node.js, Express.js, MongoDB, Tailwind CSS, REST APIs) with independently deployed frontend and backend services. Includes a rule-based AI wellness chatbot, personalized daily routine generation, an anonymous peer-support community board, and tailored lifestyle recommendations.</p>
-          <div class="project__links">
-            <a href="https://github.com/AayushiMohan/LifeTrack-For-Mental-Wellbeing" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://life-track-for-mental-wellbeing.vercel.app/" target="_blank" rel="noopener">Live ↗</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project reveal">
-        <div class="project__index">03</div>
-        <div>
-          <div class="project__title">RailYatra — Smart Railway Search &amp; Booking Platform</div>
-          <p class="project__desc">Full-stack railway search and booking platform (Python, FastAPI, SQLite, JavaScript, Scikit-learn) processing 8,700+ trains and 170,000+ route records for real-time search, dynamic fare estimation, and PNR-based booking. Includes AI-powered semantic FAQ retrieval (TF-IDF, cosine similarity) and a natural-language query parser.</p>
-          <div class="project__links">
-            <a href="https://github.com/AayushiMohan/Smart-Railway" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://smart-railway.vercel.app/" target="_blank" rel="noopener">Live ↗</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project reveal">
-        <div class="project__index">04</div>
-        <div>
-          <div class="project__title">AI Intrusion Detection System</div>
-          <p class="project__desc">ML-based IDS analyzing sequential network traffic data with LSTM neural networks to detect and classify anomalous activity. Applied feature engineering and evaluated performance using precision, recall, and F1-score for real-time threat identification.</p>
-          <div class="project__links">
-            <a href="https://github.com/AayushiMohan/AI-Intrusion-Detecting-System" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project reveal">
-        <div class="project__index">05</div>
-        <div>
-          <div class="project__title">Shiva — AI Chatbot</div>
-          <p class="project__desc">Full-stack AI chatbot powered by Groq's LLaMA 3.3 70B model with multi-turn conversation memory — ask anything from code and career advice to concepts and casual chat.</p>
-          <div class="project__links">
-            <a href="https://github.com/AayushiMohan/LLM-Powered-AI_Chatbot" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project reveal">
-        <div class="project__index">06</div>
-        <div>
-          <div class="project__title">HandConnect — Neon Aura AR</div>
-          <p class="project__desc">Browser-based AR experience using real-time hand tracking to generate interactive neon visuals and audio effects — runs directly in the browser via webcam, no installs required.</p>
-          <div class="project__links">
-            <a href="https://github.com/AayushiMohan/HandConnect" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project reveal">
-        <div class="project__index">07</div>
-        <div>
-          <div class="project__title">Currency Converter</div>
-          <p class="project__desc">Real-time currency converter using live exchange rate APIs, with a clean UI, fast updates, and support for multiple currencies with accurate rate display.</p>
-          <div class="project__links">
-            <a href="https://github.com/AayushiMohan/Currency-Converter" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
- 
-    </div>
-  </section>
- 
-  <section class="section" id="achievements">
-    <div class="filebar">achievements.md</div>
-    <h2 class="reveal">Recognition &amp; <em>credentials</em></h2>
-    <ul class="achieve reveal">
-      <li><strong>Research paper accepted</strong> — "AI Driven Intrusion Detection Systems Using Deep Learning," IJARESM (Impact Factor: 9.175).</li>
-      <li><strong>Smart India Hackathon 2024</strong> — Qualified Round 1, led a team of 6 building a full-stack tourism platform with a chatbot assistant.</li>
-      <li><strong>GSSoC 2026</strong> — 8 badges earned including Code Warrior, Bounty Master, and Point Scorer; ranked globally on the contributor leaderboard.</li>
-      <li><strong>Certifications</strong> — C++ (Udemy), Python Basics (HackerRank), Data Mining (NPTEL, IIT), NLP (Infosys Springboard).</li>
-    </ul>
-  </section>
- 
-  <section class="section" id="contact">
-    <div class="filebar">contact.sh</div>
-    <h2 class="reveal">Let's <em>connect</em></h2>
-    <div class="contact__wrap reveal">
-      <div class="contact__left">
-        <p class="contact__lede">I'm a CS student actively seeking <strong>SDE / Full-Stack internship and full-time roles</strong>.</p>
-        <p class="contact__lede">If you're building something meaningful, I'd love to be a part of it.</p>
-        <p class="contact__lede">Open to opportunities &amp; collaborations.</p>
-        <a class="contact__email" href="mailto:aayushimohan118@gmail.com">aayushimohan118@gmail.com</a>
-      </div>
-      <div class="contact__right">
-        <form onsubmit="event.preventDefault(); window.location.href='mailto:aayushimohan118@gmail.com?subject=Portfolio contact from '+encodeURIComponent(this.name.value)+'&body='+encodeURIComponent(this.message.value+' — '+this.email.value);">
-          <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
- 
-</main>
- 
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <span>© 2026 Aayushi Mohan · Crafted with code 🎧</span>
-  <span>
-    <a href="https://github.com/AayushiMohan" target="_blank" rel="noopener">GitHub</a> ·
-    <a href="https://linkedin.com/in/aayushimohan" target="_blank" rel="noopener">LinkedIn</a> ·
-    <a href="mailto:aayushimohan118@gmail.com">Email</a>
-  </span>
+  <div class="foot-links">
+    <a href="https://github.com/AayushiMohan" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/aayushimohan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="mailto:aayushimohan118@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
 </footer>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
