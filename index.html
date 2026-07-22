@@ -3,23 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Aayushi Mohan- Portfolio</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- Animated BG -->
 <canvas id="bg-canvas"></canvas>
-
 <div class="wrapper">
-
 <!-- NAV -->
 <nav id="navbar">
   <div class="nav-logo"><span>~/</span>aayushi_mohan</div>
@@ -27,6 +20,7 @@
     <li><a href="#about">about</a></li>
     <li><a href="#education">education</a></li>
     <li><a href="#skills">skills</a></li>
+    <li><a href="#experience">experience</a></li>
     <li><a href="#projects">projects</a></li>
     <li><a href="#contact">contact</a></li>
   </ul>
@@ -34,7 +28,6 @@
     <span></span><span></span><span></span>
   </div>
 </nav>
-
 <!-- HERO -->
 <section id="hero">
   <div class="hero-content">
@@ -62,7 +55,6 @@
     <span>scroll</span>
   </div>
 </section>
-
 <!-- ABOUT -->
 <section id="about">
   <div class="section-tag reveal">01 / about</div>
@@ -72,31 +64,12 @@
       <p>Hi, I'm <strong>Aayushi</strong>, student at SRM IST pursuing B.tech in Computer Science and Engineering with specialization in AI&ML. i am passionate about building full-stack and ML-powered projects that have real-world impact.</p>
       <p>I'm constantly strengthening my foundations in DSA while exploring the evolving AI landscape.</p>
       <p>Beyond code, I find balance at the gym and through music and singing.</p>
-      <div class="about-stats">
-        <div class="stat-item">
-          <span class="stat-num">6+</span>
-          <span class="stat-label">Projects shipped</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">10+</span>
-          <span class="stat-label">Tech skills</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">2026</span>
-          <span class="stat-label">Graduating</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">CSE(AI&ML)</span>
-          <span class="stat-label">Degree</span>
-        </div>
-      </div>
     </div>
     <div class="about-img-wrap reveal">
       <img src="stylepic.jpeg" alt="Aayushi Mohan">
     </div>
   </div>
 </section>
-
 <!-- EDUCATION -->
 <section id="education">
   <div class="section-tag reveal">02 / education</div>
@@ -122,7 +95,6 @@
     </div>
   </div>
 </section>
-
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-tag reveal">03 / skills</div>
@@ -190,7 +162,6 @@
     <span class="skill-tag">Object-Oriented Programming</span>
   </div>
 </div>
-
 <div class="skill-card reveal">
   <div class="skill-cat">Realtime Tech</div>
   <div class="skill-tags">
@@ -201,13 +172,43 @@
 </div>
   </div>
 </section>
-
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-tag reveal">04 / experience</div>
+  <h2 class="section-title reveal">Where I've <em>worked</em></h2>
+  <div class="xp-timeline">
+    <div class="xp-item reveal">
+      <div class="xp-head">
+        <div class="xp-role">Open-Source Developer — GirlScript Summer of Code (GSSoC 2026)</div>
+        <div class="xp-meta">May 2026 – Present</div>
+      </div>
+      <div class="xp-org">Remote</div>
+      <ul class="xp-list">
+        <li>Contributed to 100 Days 100 Web Projects — built and merged a Temperature Converter web app (HTML, CSS, JavaScript); received a "quality: exceptional" label from the maintainer.</li>
+        <li>Contributed to DevTrack — added an "Open in GitHub" button to the PersonalRecords component (TypeScript, React), improving accessibility with aria-label support.</li>
+        <li>Collaborated with maintainers and contributors across two open-source projects, incorporating code review feedback to meet repository quality standards.</li>
+      </ul>
+    </div>
+    <div class="xp-item reveal">
+      <div class="xp-head">
+        <div class="xp-role">Undergraduate Research — Machine Learning &amp; Network Security</div>
+        <div class="xp-meta">Jan 2026 – Apr 2026</div>
+      </div>
+      <div class="xp-org">SRM Institute of Science and Technology, Delhi NCR</div>
+      <ul class="xp-list">
+        <li>Selected and implemented an LSTM-based architecture for sequential network traffic analysis, outperforming statistical baselines in precision and recall across binary and multi-class classification tasks.</li>
+        <li>Processed and feature-engineered sequential network traffic datasets, coordinating methodology and experimental design across a 3-member research team.</li>
+        <li>Applied binary and multi-class deep learning classification, evaluating models with F1-score, precision, and recall metrics.</li>
+        <li>Co-authored a research paper accepted in IJARESM (ISSN: 2455-6211, Impact Factor: 9.175), Vol. 14, Issue 4, April 2026.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 <!-- PROJECTS -->
 <section id="projects">
-  <div class="section-tag reveal">04 / projects</div>
+  <div class="section-tag reveal">05 / projects</div>
   <h2 class="section-title reveal">Things I've <em>built</em></h2>
   <div class="projects-grid">
-
     <div class="project-card reveal">
       <div class="project-num">01</div>
       <div class="project-title">VideoConnect</div>
@@ -216,7 +217,6 @@
         View on GitHub <i class="fab fa-github"></i>
       </a>
     </div>
-
      <div class="project-card reveal">
       <div class="project-num">02</div>
       <div class="project-title">RailYatra - Smart Railway</div>
@@ -225,7 +225,6 @@
         View on GitHub <i class="fab fa-github"></i>
       </a>
     </div>
-
         <div class="project-card reveal">
       <div class="project-num">03</div>
       <div class="project-title">LifeTrack</div>
@@ -243,7 +242,6 @@
         View on GitHub <i class="fab fa-github"></i>
       </a>
     </div>
-
     <div class="project-card reveal">
       <div class="project-num">05</div>
       <div class="project-title">AI Intrusion Detection System</div>
@@ -252,7 +250,6 @@
         View on GitHub <i class="fab fa-github"></i>
       </a>
     </div>
-
     <div class="project-card reveal">
       <div class="project-num">06</div>
       <div class="project-title">HandConnect — Neon Aura AR</div>
@@ -261,13 +258,11 @@
         View on GitHub <i class="fab fa-github"></i>
       </a>
     </div>
-
   </div>
 </section>
-
 <!-- CONTACT -->
 <section id="contact">
-  <div class="section-tag reveal">05 / contact</div>
+  <div class="section-tag reveal">06 / contact</div>
   <h2 class="section-title reveal">Let's <em>connect</em></h2>
   <div class="contact-wrap reveal">
     <div class="contact-left">
@@ -293,7 +288,6 @@
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <span>© 2026 Aayushi Mohan · Crafted with code 🎧</span>
